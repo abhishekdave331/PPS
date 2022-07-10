@@ -1,0 +1,28 @@
+#include<stdio.h>
+void main(){
+    int A[3][3], B[3][3], C[3][3], i, j;
+
+    printf("Matrix of A\n");
+    for(i=0; i<3; i++){
+        for(j=0; j<3; j++){
+            scanf("%d", &A[i][j]);
+        }
+    }
+    printf("\n");
+
+    printf("Matrix of B\n");
+    for(i=0; i<3; i++){
+        for(j=0; j<3; j++){
+            scanf("%d", &B[i][j]);
+        }
+    }
+
+    printf("Matrix C which is addition of matrix A and B\n");
+    for(i=0; i<3; i++){
+        for(j=0; j<3; j++){
+            C[i][j]=A[i][j]+B[i][j];
+            printf("%3d", C[i][j]);
+        }
+        printf("\n");
+    }
+}
